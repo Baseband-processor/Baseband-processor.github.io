@@ -1,14 +1,10 @@
-<HTML>   
+<%perl>
+use Date::Calc;
+my @today  = Date::Calc->Today();
+my $str = "$today[0]-$today[1]-$today[2]";
+</%perl>
 
-<HEAD><TITLE>Test Template</TITLE></HEAD>   
-
-<BODY>      
-
-  <TMPL_INCLUDE NAME="header.tmpl">     
-
-   Please contact the person listed below: <BR>  
-
-  <A HREF="mailto:<TMPL_VAR NAME=email>">  
-
-  <TMPL_VAR NAME=person>  </A>    <TMPL_INCLUDE NAME="footer.tmpl">
-      </HTML>
+<html>
+<body>
+Today is <%$str %>
+</body></html>
