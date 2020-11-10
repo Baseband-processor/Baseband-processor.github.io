@@ -1,14 +1,14 @@
-<html>
-% my ($title, $header) = @_;
-<head>
-    <title><%= $title %></title>
-</head>
-<body>
-    <h1><%= $header %></h1>
-    <ul>
-        <% for my $i (1..5) { %>
-            <li>item <%= $i %></li>
-        <% } %>
-    </ul>
-</body>
-</html>
+<HTML>   
+
+<HEAD><TITLE>Test Template</TITLE></HEAD>   
+
+<BODY>      
+
+  <TMPL_INCLUDE NAME="header.tmpl">     
+
+   Please contact the person listed below: <BR>  
+
+  <A HREF="mailto:<TMPL_VAR NAME=email>">  
+
+  <TMPL_VAR NAME=person>  </A>    <TMPL_INCLUDE NAME="footer.tmpl">
+      </HTML>
