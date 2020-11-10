@@ -1,10 +1,8 @@
-[% PERL %]
-use Date::Calc;
-my @today  = Date::Calc->Today();
-my $str = "$today[0]-$today[1]-$today[2]";
-[% END %]
-
 <html>
+<head>
+<title>Run your first Perl script</title>
+</head>
 <body>
-Today is [% $str %]
-</body></html>
+Click on <a href="getcode.pl">this link</a> to run your first Perl script.
+</body>
+</html>
