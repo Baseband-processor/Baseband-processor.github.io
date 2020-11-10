@@ -2,5 +2,11 @@
 
 use strict;
 use warnings;
-use Catalyst;
-print "hello world!";
+use CGI;
+
+my $cgi = CGI->new();
+print $cgi->header( -type => "text/plain" );
+
+print <<'END';
+  text
+END
