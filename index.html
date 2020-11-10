@@ -1,10 +1,10 @@
-<%perl>
+[% PERL %]
 use Date::Calc;
 my @today  = Date::Calc->Today();
 my $str = "$today[0]-$today[1]-$today[2]";
-</%perl>
+[% END %]
 
 <html>
 <body>
-Today is <%$str %>
+Today is [% $str %]
 </body></html>
