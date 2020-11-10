@@ -8,6 +8,7 @@ use strict;
 
 use HTML::Template;   
 
+print "aQ";
 my $template = HTML::Template->new(filename => 'greeting1.tmpl');   
 
 $template->param('email', 'bill@nowhere.com');   
