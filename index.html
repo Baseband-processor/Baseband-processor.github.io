@@ -1,12 +1,14 @@
-#!/usr/bin/perl
-
-use strict;
-use warnings;
-use CGI;
-
-my $cgi = CGI->new();
-print $cgi->header( -type => "text/plain" );
-
-print <<'END';
-  text
-END
+<html>
+% my ($title, $header) = @_;
+<head>
+    <title><%= $title %></title>
+</head>
+<body>
+    <h1><%= $header %></h1>
+    <ul>
+        <% for my $i (1..5) { %>
+            <li>item <%= $i %></li>
+        <% } %>
+    </ul>
+</body>
+</html>
