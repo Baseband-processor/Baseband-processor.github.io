@@ -1,7 +1,8 @@
 <html> 
         <head> 
-            <script type = "text/javascript" src = "Acestream.js"></script>
-                var player = null;
+            <script type = "text/javascript" src = "Acestream.js">
+                    <script>
+                    var player = null;
                     AceStream.createPlayer("#player", {
                         onLoad: function (playerObj) {
                             player = playerObj;
@@ -12,6 +13,6 @@
                             console.log("init: error: " + err);
                         }
                     });
-                
+                </script>
         </head> 
     </html>
