@@ -5,8 +5,7 @@
 <meta content="utf-8" http-equiv="encoding">
                 <script type = "text/javascript" src = "Acestream.js">
                     var player = null;
-                    var stream_input = prompt("Please enter your stream");
-
+                    var stream_input = window.prompt("Please enter your stream:");
                     AceStream.createPlayer("#player", {
                         onLoad: function (playerObj) {
                             player = playerObj;
